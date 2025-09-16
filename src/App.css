@@ -1,0 +1,96 @@
+
+.hero-section {
+  background-image: linear-gradient(to bottom right, rgba(10, 25, 47, 0.55), rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1505765050468-7c7a3b7f9f6d?auto=format&fit=crop&w=1600&q=60');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  min-height: 360px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+.mt-2-5 {
+  margin-top: 0.625rem;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url("/public/image/Sokodirectory-ethiopian-airline.jpg"); /* Make sure image is in public/image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+
+.hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero-section .btn-primary {
+  background-color: #003366;
+  border: none;
+}
+
+.hero-section .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p.lead {
+    font-size: 1rem;
+  }
+  .hero-section .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.logo {
+  position: absolute;   
+  top: 0px;            
+  left: 0px;           
+}
+.logo img {
+  height: 80px;         
+  width: 100px;          
+  display: block;       
+}
